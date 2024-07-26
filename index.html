@@ -1,0 +1,151 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="task3style.css">
+</head>
+<!-- task 2 -->
+<style>
+   
+    .logo{
+       text-align: center;
+        margin-bottom: 0px;
+      
+       }
+    .flag-logo {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border: none;
+             }
+    
+    .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar li {
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #ccc;
+        }
+
+        .background-image {
+            background-image:url('frredom.jpg');
+           background-size: cover;
+            height: 500px; /* adjust the height to your liking */
+        }
+        .come{
+            text-align: center;
+            color:#333;
+            font-size: large;
+        }
+        body{
+        background-color: coral;
+        background-size: cover;
+      }
+      footer {
+   background-color: rgb(88, 100, 88);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  height: 50px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+/* existing styles */
+
+#change-bg-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+    #change-bg-btn:hover {
+    background-color: #444;
+}
+</style>
+<!-- task 1 -->
+<body>
+    <header >
+        <div class="logo">
+         <img src="flag logo.jpg" alt="Flag Logo"  class="flag-logo">
+            <img src="akhand bharat.jpg" alt="Website Logo" width="100" height="100">
+            <p style="text-align: center; font-size: 18px; margin-top: 5px;color: blue;">Akhand Bharat</p> 
+        </div>
+        <nav class="navbar">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about india.html">About India</a></li>
+                <li><a href="freedom fighter.html">Freedom Fighters</a></li>
+                <li><a href="movements.html">Movements</a></li>
+                <li><a href="My Form.html">My Form</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+     </header>
+     <div class="background-image"></div>
+     <div class="come"><p><b><i><h2>Welcome to the Website.</h2></i></b></p></div>
+     <footer>
+        <div class="footer">
+          <p>&copy; 2024 Akhand Bharat. All rights reserved.</p>
+          <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+          </div>
+      </footer>
+      <!-- task 4 -->
+      <button id="change-bg-btn">Change Background Color</button>
+
+    <script>
+        const changeBgBtn = document.getElementById('change-bg-btn');
+        changeBgBtn.addEventListener('click', () => {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'coral'? 'white' : 'coral';
+        });
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!-- task 7 using bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="task3style.css">
+</head>
+
+<style>
+    /* custom styles */
+    .logo {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .flag-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .background-image {
+        background-image: url('frredom.jpg');
+        background-size: cover;
+        height: 500px; /* adjust the height to your liking */
+    }
+    .come {
+        text-align: center;
+        color: #333;
+        font-size: large;
+    }
+    footer {
+        background-color: rgb(88, 100, 88);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        clear: both;
+        height: 50px;
+    }
+    #change-bg-btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #change-bg-btn:hover {
+        background-color: #444;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="flag logo.jpg" alt="Flag Logo" class="flag-logo">
+                <img src="akhand bharat.jpg" alt="Website Logo" width="100" height="100">
+                <p style="text-align: center; font-size: 18px; margin-top: 5px;color: blue;">Akhand Bharat</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about india.html">About India</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="freedom fighter.html">Freedom Fighters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movements.html">Movements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="My Form.html">My Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="jumbotron background-image"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 come">
+                <p><b><i><h2>Welcome to the Website.</h2></i></b></p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2024 Akhand Bharat. All rights reserved.</p>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- task 4 -->
+    <button id="change-bg-btn" class="btn btn-dark">Change Background Color 
+        <script>
+            const changeBgBtn = document.getElementById('change-bg-btn');
+            changeBgBtn.addEventListener('click', () => {
+                document.body.style.backgroundColor = document.body.style.backgroundColor === 'coral'? 'white' : 'coral';
+            });
+        </script>   
